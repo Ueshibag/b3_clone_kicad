@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "b3_connectors_library")(type "KiCad")(uri "/home/georges/Documents/KicadProjects/b3_clone/b3_symbols/b3_connectors_library.kicad_sym")(options "")(descr ""))
+  (lib (name "B3_Switches_Library")(type "KiCad")(uri "/home/georges/Documents/KicadProjects/b3_clone/b3_symbols/B3_Switches_Library.kicad_sym")(options "")(descr ""))
+)

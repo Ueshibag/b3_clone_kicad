@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name b3_overall)(type Legacy)(uri ${KIPRJMOD}/b3_overall.lib)(options "")(descr ""))
+)

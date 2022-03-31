@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name rpi_usb_interface-rescue)(type Legacy)(uri ${KIPRJMOD}/rpi_usb_interface-rescue.lib)(options "")(descr "")(disabled))
+  (lib (name shield_arduino)(type Legacy)(uri /home/georges/Documents/kicad/b3_clone/Librairie_kicad_arduino/Library_schematic_shield_arduino/shield_arduino.lib)(options "")(descr "")(disabled))
+  (lib (name keyboards_pedals-rescue)(type Legacy)(uri ${KIPRJMOD}/keyboards_pedals-rescue.lib)(options "")(descr ""))
+  (lib (name keyboards-rescue)(type Legacy)(uri ${KIPRJMOD}/keyboards-rescue.lib)(options "")(descr ""))
+)

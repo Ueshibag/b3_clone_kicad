@@ -1,0 +1,92 @@
+
+(rules PCB vibrato_chorus_leslie
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1939)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.3)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    "/VOLUME_SOFT_LED" "/VOLUME_SWITCH" "/EXPR_PEDAL" "/VIBRATO_SWELL_SWITCH" "/PERC_HARM_THIRD_LED" "/VIBRATO_SWELL_ON_LED" "/PERC_HARM_SEL_SWITCH" "/VIBRATO_GREAT_SWITCH"
+    "/PERC_DELAY_SWITCH" "/VIBRATO_GREAT_ON_LED" "/PERC_DELAY_FAST_LED" /V2 "/PERC_VOLUME_SWITCH" /V1 "/PERC_VOLUME_NORMAL_LED" /C1
+    "/PERC_ON_LED" "/PERC_SWITCH" "Net-(C1-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(A1-Pad19)" "Net-(C3-Pad1)"
+    "unconnected-(A1-Pad3)" "unconnected-(A1-Pad17)" "Net-(Q2-Pad2)" "Net-(Q2-Pad1)" "Net-(Q3-Pad1)" "Net-(Q3-Pad2)" "Net-(R7-Pad2)" "unconnected-(A1-Pad28)"
+    "unconnected-(A1-Pad30)" /C2 /V3 /C3 "Net-(C6-Pad1)" "Net-(Q1-Pad1)" "Net-(Q1-Pad2)" "Net-(R3-Pad2)"
+    "Net-(R13-Pad2)" "unconnected-(SW1-Pad2)" "unconnected-(SW2-Pad2)" "unconnected-(SW3-Pad2)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class power
+    +5V GND
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 1000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "lcd_alpha")(type "Legacy")(uri "${KIPRJMOD}/lcd_alpha.lib")(options "")(descr ""))
+  (lib (name "B3_Switches_Library")(type "KiCad")(uri "${KICAD_USER_SYMBOL_DIR}/B3_Switches_Library.kicad_sym")(options "")(descr ""))
+  (lib (name "b3_connectors_library")(type "KiCad")(uri "${KICAD_USER_SYMBOL_DIR}/b3_connectors_library.kicad_sym")(options "")(descr ""))
+)
