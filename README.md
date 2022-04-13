@@ -9,7 +9,7 @@ positions and send the corresponding MIDI messages to the B3 emulator software (
 
 ## keyboards
 
-Scans both Fatar keyboards and send MIDI messages to setBfree
+Scans both Fatar keyboards and sends MIDI messages to setBfree
 
 ## percussions_expr_pedal
 
