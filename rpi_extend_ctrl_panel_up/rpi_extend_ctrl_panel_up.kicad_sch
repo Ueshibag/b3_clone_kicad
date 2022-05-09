@@ -9,7 +9,8 @@
     (date "2022-04-10")
     (rev "1.1")
     (company "Picherie")
-    (comment 1 "Rev 1.1: SDA and SCL external pups (R10 and R11) discarded. Use Rpi internal pups instead.")
+    (comment 1 "SDA and SCL external pups (R10 and R11) discarded. Use Rpi internal pups instead.")
+    (comment 2 "R9 = 220 replaced with 51")
   )
 
   (lib_symbols
@@ -3282,7 +3283,7 @@
     (property "Reference" "R9" (id 0) (at 79.1972 29.3116 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "220" (id 1) (at 79.1972 31.623 0)
+    (property "Value" "51" (id 1) (at 79.1972 31.623 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" (id 2) (at 77.47 30.48 0)
@@ -4898,7 +4899,7 @@
       (reference "R8") (unit 1) (value "2.8K") (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000061ba4973"
-      (reference "R9") (unit 1) (value "220") (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder")
+      (reference "R9") (unit 1) (value "51") (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder")
     )
     (path "/a9f36509-ce44-4e7e-bf3d-d4d8c7f2a8d8"
       (reference "R12") (unit 1) (value "9.1K") (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder")
