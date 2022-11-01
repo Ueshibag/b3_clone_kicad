@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name "b3_buttons_library")(type "KiCad")(uri "${KICAD_USER_FOOTPRINT_DIR}/b3_buttons_library.pretty")(options "")(descr ""))
-)
