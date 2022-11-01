@@ -27,8 +27,6 @@ MIDI messages to setBfree.
 A small PCB on which the 6-position rotary switch is soldered. This PCB is connected to the
 vibrato_chorus_leslie board.
 
-## rpi_extend_ctrl_panel_up
+## volume_reverb
 
-This board houses a 2x16 characters LCD, the volume and reverb rotary encoders, as well as
-registration selection buttons. It connects to the Rasberry Pi board and is seated on the
-left of the upper keyboard.
+This board houses two rotary encoders to control IQaudio PiDAC+ volume and setBfree reverb.
