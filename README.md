@@ -16,6 +16,10 @@ Scans both Fatar keyboards and sends MIDI messages to setBfree
 Scans the percussion control switches and performs analog to digital conversion for the
 expression pedal. Signals are routed towards the vibrato_chorus_leslie PCB.
 
+## rpi_extension
+
+This is merely a connection PCB for other boards to connect to the Raspberry PI.
+
 ## vibrato_chorus_leslie
 
 Scans the vibrato and chorus switches as well as the Leslie 3-position switch (stop/slow/fast).
@@ -27,6 +31,6 @@ MIDI messages to setBfree.
 A small PCB on which the 6-position rotary switch is soldered. This PCB is connected to the
 vibrato_chorus_leslie board.
 
-## volume_reverb
+## volume_reverb_overdrive
 
-This board houses two rotary encoders to control IQaudio PiDAC+ volume and setBfree reverb.
+This board houses three rotary encoders to control IQaudio PiDAC+ volume, setBfree reverb and overdrive. The overdrive rotary switch embeds a push button to safely power down the Raspberry PI.
