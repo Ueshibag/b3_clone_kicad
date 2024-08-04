@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP SW_Rotary1x6
-D 1 rotary switch with 6 positions
-K rotary switch
-F http://cdn-reichelt.de/documents/datenblatt/C200/DS-Serie%23LOR.pdf
-$ENDCMP
-#
-#End Doc Library
