@@ -47,3 +47,6 @@ fp-info-cache
 
 
 volume_reverb/
+production/
+**/Gerber/
+
