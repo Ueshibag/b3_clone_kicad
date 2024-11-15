@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "B3_Switches_Library")(type "Legacy")(uri "${KICAD_USER_SYMBOL_DIR}/b3_symbols/B3_Switches_Library.lib")(options "")(descr ""))
+)
