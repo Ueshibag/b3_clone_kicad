@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "b3_footprints")(type "KiCad")(uri "/home/georges/dev/kicad/b3_clone_kicad/b3_footprints.pretty")(options "")(descr ""))
+)

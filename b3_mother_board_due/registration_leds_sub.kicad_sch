@@ -6,11 +6,9 @@
 	(paper "A4")
 	(title_block
 		(title "A & B Registration Indicator LEDs")
-		(date "2024-11-12")
+		(date "2025-07-28")
 		(rev "1.0")
 		(company "Picherie")
-		(comment 1 "Registration LEDs indicate which settings (A or B) are selected for upper and lower keyboards")
-		(comment 2 "These LEDs have to be placed just above drawbars groups")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x02"
@@ -138,6 +136,191 @@
 					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:LED_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at -1.27 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "LED_Small"
+				(at -4.445 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pin" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode light-emitting-diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_Small_0_1"
+				(polyline
+					(pts
+						(xy -0.762 -1.016) (xy -0.762 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy -0.508 1.27) (xy -0.254 1.27) (xy -0.508 1.27) (xy -0.508 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.27) (xy 0 1.778) (xy 0.254 1.778) (xy 0 1.778) (xy 0 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy -0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_Small_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.778)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.778)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -370,7 +553,7 @@
 			(symbol "BC547_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0.635 0)
+						(xy -2.54 0) (xy 0.635 0)
 					)
 					(stroke
 						(width 0)
@@ -382,34 +565,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
+						(xy 0.635 1.905) (xy 0.635 -1.905)
 					)
 					(stroke
 						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 0.635) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
 						(type default)
 					)
 					(fill
@@ -427,9 +586,35 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "BC547_1_1"
 				(polyline
 					(pts
-						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778) (xy 1.27 -1.778)
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
 					)
 					(stroke
 						(width 0)
@@ -439,11 +624,9 @@
 						(type outline)
 					)
 				)
-			)
-			(symbol "BC547_1_1"
 				(pin input line
 					(at -5.08 0 0)
-					(length 5.08)
+					(length 2.54)
 					(name "B"
 						(effects
 							(font
@@ -498,7 +681,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
+		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -519,7 +702,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+5V"
+			(property "Value" "+3.3V"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -545,7 +728,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -563,7 +746,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+5V_0_1"
+			(symbol "+3.3V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -601,7 +784,7 @@
 					)
 				)
 			)
-			(symbol "+5V_1_1"
+			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -725,6 +908,37 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Registration LEDs indicate which settings (A or B) are selected for upper and lower keyboards.\nWhen registration presets are selected (neither A, nor B), the corresponding keyboard LEDs are turned off.\n\nThese LEDs have to be placed just above drawbars groups."
+		(exclude_from_sim no)
+		(at 54.102 42.164 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "5b6b462b-ab6a-4d46-9f58-2381d5737f6a")
+	)
+	(text "This LED indicates that a MIDI message is being sent."
+		(exclude_from_sim no)
+		(at 122.936 146.558 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "f4e3b48f-26f6-4232-8a53-d810e2ed3ae0")
+	)
+	(wire
+		(pts
+			(xy 58.42 154.94) (xy 62.23 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07b14e28-6e25-4a21-8870-cb2174f989f1")
+	)
 	(wire
 		(pts
 			(xy 64.77 87.63) (xy 64.77 91.44)
@@ -767,6 +981,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 165.1) (xy 68.58 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32b51071-cdda-4842-b262-7fa0d60a6fed")
+	)
+	(wire
+		(pts
 			(xy 109.22 96.52) (xy 105.41 96.52)
 		)
 		(stroke
@@ -787,6 +1011,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 154.94) (xy 69.85 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "459089b4-7f38-43b6-842d-e8e3ddf46b85")
+	)
+	(wire
+		(pts
 			(xy 180.34 87.63) (xy 180.34 91.44)
 		)
 		(stroke
@@ -804,6 +1038,26 @@
 			(type default)
 		)
 		(uuid "4dcd8af8-24f0-4a05-9bf9-e359a7125ebb")
+	)
+	(wire
+		(pts
+			(xy 76.2 154.94) (xy 76.2 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "582cd067-7299-4bac-b2f0-0a63ccd8528c")
+	)
+	(wire
+		(pts
+			(xy 62.23 165.1) (xy 59.69 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b09a433-4bc6-4fca-bfce-7407551486ca")
 	)
 	(wire
 		(pts
@@ -867,6 +1121,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 154.94) (xy 76.2 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a25315c-ce3c-4512-a6db-e9b415496b94")
+	)
+	(wire
+		(pts
 			(xy 121.92 104.14) (xy 121.92 101.6)
 		)
 		(stroke
@@ -874,6 +1138,26 @@
 			(type default)
 		)
 		(uuid "a0ca3260-473f-4e7f-becc-85dc924a010c")
+	)
+	(wire
+		(pts
+			(xy 76.2 172.72) (xy 76.2 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adf3a238-704b-4ff7-b88b-df118dc35224")
+	)
+	(wire
+		(pts
+			(xy 58.42 149.86) (xy 58.42 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5fb6e2b-147a-46cc-a1fc-f280f76d7e09")
 	)
 	(wire
 		(pts
@@ -1027,6 +1311,17 @@
 		)
 		(uuid "594c91f1-8124-4df0-adda-d68040314713")
 	)
+	(hierarchical_label "CTRL_LED"
+		(shape input)
+		(at 59.69 165.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6527ac54-3f48-4ab1-8a6a-55b27600551e")
+	)
 	(hierarchical_label "LO_B_LED"
 		(shape input)
 		(at 222.25 96.52 180)
@@ -1059,7 +1354,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0d26387d-dfc8-4cc5-8c22-d42b9b4b4a05")
-		(property "Reference" "R17"
+		(property "Reference" "R19"
 			(at 228.6 91.313 90)
 			(effects
 				(font
@@ -1067,7 +1362,7 @@
 				)
 			)
 		)
-		(property "Value" "2.8K"
+		(property "Value" "2.2K"
 			(at 228.6 93.6244 90)
 			(effects
 				(font
@@ -1084,7 +1379,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/panasonic/erj8enf2801v/res-couche-epaisse-2-8k-1-0-25w/dp/2307588"
+		(property "Datasheet" "~"
 			(at 228.6 96.52 0)
 			(effects
 				(font
@@ -1093,7 +1388,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small US symbol"
 			(at 228.6 96.52 0)
 			(effects
 				(font
@@ -1111,7 +1406,7 @@
 		(instances
 			(project "b3_mother_board"
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "R17")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -1127,7 +1422,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "13645877-b388-4855-8006-ea80c3493a8c")
-		(property "Reference" "J20"
+		(property "Reference" "J16"
 			(at 190.5 85.0899 0)
 			(effects
 				(font
@@ -1181,7 +1476,75 @@
 		(instances
 			(project "b3_mother_board"
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "J20")
+					(reference "J16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 64.77 165.1 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "15ab367a-2916-4763-bd87-46be5cecc6a9")
+		(property "Reference" "R11"
+			(at 64.77 159.893 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2K"
+			(at 64.77 162.2044 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 64.77 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 64.77 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 64.77 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4d337cd1-e1ad-45a5-8a3a-ba8d79eb0b48")
+		)
+		(pin "2"
+			(uuid "2a9c865a-de80-4679-8f5b-3e68fc459c96")
+		)
+		(instances
+			(project "b3_mother_board_due"
+				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -1197,7 +1560,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1eefa18f-7256-4bd4-a4e1-688e05d3c680")
-		(property "Reference" "J18"
+		(property "Reference" "J14"
 			(at 74.93 85.0899 0)
 			(effects
 				(font
@@ -1251,7 +1614,7 @@
 		(instances
 			(project ""
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "J18")
+					(reference "J14")
 					(unit 1)
 				)
 			)
@@ -1267,7 +1630,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a1b169d-4356-4c27-8a11-7d67929ca5bf")
-		(property "Reference" "Q2"
+		(property "Reference" "Q3"
 			(at 124.46 95.2499 0)
 			(effects
 				(font
@@ -1296,7 +1659,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/on-semiconductor/bc547cbu/transistor-bipol-npn-45v-to-92/dp/2453791?st=bc547"
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
 			(at 119.38 96.52 0)
 			(effects
 				(font
@@ -1306,7 +1669,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
 			(at 119.38 96.52 0)
 			(effects
 				(font
@@ -1327,22 +1690,89 @@
 		(instances
 			(project "b3_mother_board"
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "Q2")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "power:+3.3V")
+		(at 224.79 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "35bc4d20-cb7e-4724-b76d-a88636ff7db5")
+		(property "Reference" "#PWR034"
+			(at 224.79 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 224.79 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 224.79 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 224.79 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cbe434b8-2773-4094-b0af-5a8f7a0994fe")
+		)
+		(instances
+			(project "b3_mother_board_due"
+				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
 		(at 166.37 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "380327b8-7426-422d-8a99-17585f79ff0e")
-		(property "Reference" "#PWR046"
+		(fields_autoplaced yes)
+		(uuid "48190dd0-3128-4e32-a0f5-2406393a78c9")
+		(property "Reference" "#PWR030"
 			(at 166.37 83.82 0)
 			(effects
 				(font
@@ -1351,13 +1781,12 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 167.64 76.454 0)
+		(property "Value" "+3.3V"
+			(at 166.37 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -1378,7 +1807,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 166.37 80.01 0)
 			(effects
 				(font
@@ -1388,78 +1817,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "d31dac09-dcd9-46f9-9688-870bd37a406d")
+			(uuid "e84a34bd-0d46-4a7b-b78f-f003fbfa6266")
 		)
 		(instances
-			(project "b3_mother_board"
+			(project "b3_mother_board_due"
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 50.8 80.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3b1bcc41-c1a0-4524-8569-18c574f4f832")
-		(property "Reference" "#PWR042"
-			(at 50.8 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 52.07 76.454 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 50.8 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cd55609d-a4fc-4164-be5a-e827c2f8e226")
-		)
-		(instances
-			(project ""
-				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "#PWR042")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -1475,7 +1838,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48de241d-0641-46d7-826a-b76f601561c9")
-		(property "Reference" "J19"
+		(property "Reference" "J15"
 			(at 132.08 85.0899 0)
 			(effects
 				(font
@@ -1529,7 +1892,73 @@
 		(instances
 			(project "b3_mother_board"
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "J19")
+					(reference "J15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 76.2 172.72 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4935b16e-4f19-4aa0-a1f7-6c79f6b68c75")
+		(property "Reference" "#PWR031"
+			(at 76.2 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.073 177.1142 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 76.2 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f7dce4cb-b42d-4f0f-a1be-357436db8f30")
+		)
+		(instances
+			(project "b3_mother_board_due"
+				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -1544,7 +1973,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "50bb7e78-9a6c-4b88-8a4c-80a100bc32e8")
-		(property "Reference" "R18"
+		(property "Reference" "R20"
 			(at 238.252 79.248 90)
 			(effects
 				(font
@@ -1553,7 +1982,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "120"
 			(at 238.252 81.788 90)
 			(effects
 				(font
@@ -1598,7 +2027,7 @@
 		(instances
 			(project "b3_mother_board"
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "R18")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -1614,7 +2043,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5112a42a-ce91-4259-93ff-1ab399ef1c51")
-		(property "Reference" "R11"
+		(property "Reference" "R12"
 			(at 54.61 91.313 90)
 			(effects
 				(font
@@ -1622,7 +2051,7 @@
 				)
 			)
 		)
-		(property "Value" "2.8K"
+		(property "Value" "2.2K"
 			(at 54.61 93.6244 90)
 			(effects
 				(font
@@ -1639,7 +2068,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/panasonic/erj8enf2801v/res-couche-epaisse-2-8k-1-0-25w/dp/2307588"
+		(property "Datasheet" "~"
 			(at 54.61 96.52 0)
 			(effects
 				(font
@@ -1648,7 +2077,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small US symbol"
 			(at 54.61 96.52 0)
 			(effects
 				(font
@@ -1666,7 +2095,7 @@
 		(instances
 			(project "b3_mother_board"
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "R11")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -1682,7 +2111,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a39a2ae-4de1-4881-a9db-4ced5f99b00f")
-		(property "Reference" "Q1"
+		(property "Reference" "Q2"
 			(at 67.31 95.2499 0)
 			(effects
 				(font
@@ -1711,7 +2140,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/on-semiconductor/bc547cbu/transistor-bipol-npn-45v-to-92/dp/2453791?st=bc547"
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
 			(at 62.23 96.52 0)
 			(effects
 				(font
@@ -1721,7 +2150,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
 			(at 62.23 96.52 0)
 			(effects
 				(font
@@ -1742,7 +2171,73 @@
 		(instances
 			(project "b3_mother_board"
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "Q1")
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 107.95 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e0aea19-0f73-4ad5-a307-182046eb99bf")
+		(property "Reference" "#PWR025"
+			(at 107.95 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 107.95 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 107.95 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "309a5a4e-a36a-4586-963b-5609dcf13fdb")
+		)
+		(instances
+			(project "b3_mother_board_due"
+				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -1758,7 +2253,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7afa6bcb-b69b-4a17-bb3b-2efaa427d391")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR032"
 			(at 64.77 110.49 0)
 			(effects
 				(font
@@ -1793,7 +2288,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 64.77 104.14 0)
 			(effects
 				(font
@@ -1808,7 +2303,7 @@
 		(instances
 			(project "b3_mother_board"
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "#PWR043")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -1824,7 +2319,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8808ac7e-80f8-4a5e-a689-a1e1d6b5b5cd")
-		(property "Reference" "R15"
+		(property "Reference" "R17"
 			(at 170.18 91.313 90)
 			(effects
 				(font
@@ -1832,7 +2327,7 @@
 				)
 			)
 		)
-		(property "Value" "2.8K"
+		(property "Value" "2.2K"
 			(at 170.18 93.6244 90)
 			(effects
 				(font
@@ -1849,7 +2344,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/panasonic/erj8enf2801v/res-couche-epaisse-2-8k-1-0-25w/dp/2307588"
+		(property "Datasheet" "~"
 			(at 170.18 96.52 0)
 			(effects
 				(font
@@ -1858,7 +2353,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small US symbol"
 			(at 170.18 96.52 0)
 			(effects
 				(font
@@ -1876,7 +2371,7 @@
 		(instances
 			(project "b3_mother_board"
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "R15")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -1891,7 +2386,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "950ab341-1bd7-457f-a4cb-d6f1adc7b908")
-		(property "Reference" "R16"
+		(property "Reference" "R18"
 			(at 179.832 79.248 90)
 			(effects
 				(font
@@ -1900,7 +2395,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "120"
 			(at 179.832 81.788 90)
 			(effects
 				(font
@@ -1945,7 +2440,73 @@
 		(instances
 			(project "b3_mother_board"
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "R16")
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 50.8 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99e212cc-488f-45dc-88d9-752f986846ad")
+		(property "Reference" "#PWR07"
+			(at 50.8 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 50.8 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 50.8 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7befa638-b20b-464b-8db4-6eaae5beb8bc")
+		)
+		(instances
+			(project ""
+				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -1961,7 +2522,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9aad5546-825e-4ef3-ac9d-9107ac95fe9a")
-		(property "Reference" "R13"
+		(property "Reference" "R15"
 			(at 111.76 91.313 90)
 			(effects
 				(font
@@ -1969,7 +2530,7 @@
 				)
 			)
 		)
-		(property "Value" "2.8K"
+		(property "Value" "2.2K"
 			(at 111.76 93.6244 90)
 			(effects
 				(font
@@ -1986,7 +2547,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/panasonic/erj8enf2801v/res-couche-epaisse-2-8k-1-0-25w/dp/2307588"
+		(property "Datasheet" "~"
 			(at 111.76 96.52 0)
 			(effects
 				(font
@@ -1995,7 +2556,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small US symbol"
 			(at 111.76 96.52 0)
 			(effects
 				(font
@@ -2013,73 +2574,7 @@
 		(instances
 			(project "b3_mother_board"
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 107.95 80.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9b8e97f4-606d-456e-8cc8-b066c31516f4")
-		(property "Reference" "#PWR044"
-			(at 107.95 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 109.22 76.454 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.95 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 107.95 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a72d2025-6a09-40a1-a9ff-65f477fc1ccc")
-		)
-		(instances
-			(project "b3_mother_board"
-				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "#PWR044")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -2095,7 +2590,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a657fc49-d7ab-4deb-a2a5-ab69d65ef076")
-		(property "Reference" "Q3"
+		(property "Reference" "Q4"
 			(at 182.88 95.2499 0)
 			(effects
 				(font
@@ -2124,7 +2619,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/on-semiconductor/bc547cbu/transistor-bipol-npn-45v-to-92/dp/2453791?st=bc547"
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
 			(at 177.8 96.52 0)
 			(effects
 				(font
@@ -2134,7 +2629,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
 			(at 177.8 96.52 0)
 			(effects
 				(font
@@ -2155,7 +2650,73 @@
 		(instances
 			(project "b3_mother_board"
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "Q3")
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 58.42 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7cd0e19-cce3-491b-b5c2-61d19fd6d68f")
+		(property "Reference" "#PWR033"
+			(at 58.42 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 58.42 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 58.42 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fe645675-af52-4a75-b3a2-cff5a3536bb8")
+		)
+		(instances
+			(project "b3_mother_board_due"
+				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -2171,7 +2732,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a846b2f7-2e9f-4b91-af06-b82b624db546")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR035"
 			(at 121.92 110.49 0)
 			(effects
 				(font
@@ -2206,7 +2767,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 121.92 104.14 0)
 			(effects
 				(font
@@ -2221,7 +2782,83 @@
 		(instances
 			(project "b3_mother_board"
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "#PWR045")
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC547")
+		(at 73.66 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a91e4c26-be45-4c45-8a22-0f5f7c60cff4")
+		(property "Reference" "Q1"
+			(at 78.74 163.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547"
+			(at 78.74 166.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 78.74 167.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
+			(at 73.66 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
+			(at 73.66 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c55d0de-80f8-443d-b0ff-5fec40471b04")
+		)
+		(pin "2"
+			(uuid "20f390dd-887a-4d0b-a314-c6853b834a19")
+		)
+		(pin "3"
+			(uuid "50ff6bfe-4f55-4aa9-8c61-cddff7cb8b28")
+		)
+		(instances
+			(project "b3_mother_board_due"
+				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -2237,7 +2874,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "beed5c3d-1598-4b36-a5fa-5ab8fa314113")
-		(property "Reference" "J21"
+		(property "Reference" "J17"
 			(at 248.92 85.0899 0)
 			(effects
 				(font
@@ -2291,7 +2928,7 @@
 		(instances
 			(project "b3_mother_board"
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "J21")
+					(reference "J17")
 					(unit 1)
 				)
 			)
@@ -2306,7 +2943,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c15b68f8-fcbc-420a-ac71-f6e5b7305deb")
-		(property "Reference" "R12"
+		(property "Reference" "R13"
 			(at 64.262 79.248 90)
 			(effects
 				(font
@@ -2315,7 +2952,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "120"
 			(at 64.262 81.788 90)
 			(effects
 				(font
@@ -2360,7 +2997,7 @@
 		(instances
 			(project ""
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "R12")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -2376,7 +3013,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c340aa65-9744-453f-9a17-735fe08d69ac")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR037"
 			(at 180.34 110.49 0)
 			(effects
 				(font
@@ -2411,7 +3048,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 180.34 104.14 0)
 			(effects
 				(font
@@ -2426,7 +3063,76 @@
 		(instances
 			(project "b3_mother_board"
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "#PWR047")
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 64.77 154.94 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c5136e80-c01d-4562-97d0-8efd2952ca8a")
+		(property "Reference" "R14"
+			(at 66.802 149.098 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "120"
+			(at 66.802 151.638 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 64.77 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 64.77 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 64.77 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c18a6be6-4cba-4348-868d-7951d95a649b")
+		)
+		(pin "2"
+			(uuid "b8316fb9-e5e7-4307-b433-61cc4bb37dde")
+		)
+		(instances
+			(project "b3_mother_board_due"
+				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -2442,7 +3148,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c95dff1a-bc39-4d65-8556-0b14b3c8c429")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR039"
 			(at 238.76 110.49 0)
 			(effects
 				(font
@@ -2477,7 +3183,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 238.76 104.14 0)
 			(effects
 				(font
@@ -2492,23 +3198,32 @@
 		(instances
 			(project "b3_mother_board"
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "#PWR049")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 224.79 80.01 0)
+		(lib_id "Device:LED_Small")
+		(at 72.39 154.94 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d5533cf7-21f5-4637-9922-48d11c26441f")
-		(property "Reference" "#PWR048"
-			(at 224.79 83.82 0)
+		(uuid "dce73777-612b-413f-b51d-5a29d4ac733e")
+		(property "Reference" "D1"
+			(at 72.39 151.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyboards"
+			(at 72.39 146.304 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2516,17 +3231,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 226.06 76.454 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 224.79 80.01 0)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 72.39 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2534,8 +3240,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 224.79 80.01 0)
+		(property "Datasheet" "~"
+			(at 72.39 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2543,8 +3249,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 224.79 80.01 0)
+		(property "Description" "Light emitting diode, small symbol"
+			(at 72.39 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" "1=K 2=A"
+			(at 72.39 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2553,12 +3268,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "a80de9a6-8678-4176-b560-4e4312ae2bb7")
+			(uuid "37631599-ac60-422d-99af-f69d7dd9ed14")
+		)
+		(pin "2"
+			(uuid "2c3ca98c-45cd-4e50-9c83-262a86da872d")
 		)
 		(instances
-			(project "b3_mother_board"
+			(project "b3_mother_board_due"
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "#PWR048")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -2573,7 +3291,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "df638ee1-142e-4b3d-a4eb-7bc263c71600")
-		(property "Reference" "R14"
+		(property "Reference" "R16"
 			(at 121.412 79.248 90)
 			(effects
 				(font
@@ -2582,7 +3300,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "120"
 			(at 121.412 81.788 90)
 			(effects
 				(font
@@ -2627,7 +3345,7 @@
 		(instances
 			(project "b3_mother_board"
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "R14")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -2643,7 +3361,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ebbcb325-4614-49ad-8f98-5d892f11ecc3")
-		(property "Reference" "Q4"
+		(property "Reference" "Q5"
 			(at 241.3 95.2499 0)
 			(effects
 				(font
@@ -2672,7 +3390,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/on-semiconductor/bc547cbu/transistor-bipol-npn-45v-to-92/dp/2453791?st=bc547"
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
 			(at 236.22 96.52 0)
 			(effects
 				(font
@@ -2682,7 +3400,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
 			(at 236.22 96.52 0)
 			(effects
 				(font
@@ -2703,7 +3421,7 @@
 		(instances
 			(project "b3_mother_board"
 				(path "/d42afe27-1079-438a-9eca-d2ca1f118e13/400d22c8-69f1-4153-a6ed-8fc67a68be1a"
-					(reference "Q4")
+					(reference "Q5")
 					(unit 1)
 				)
 			)

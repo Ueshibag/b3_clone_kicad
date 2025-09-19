@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "MIDI Message Sending Control LEDs")
-		(date "2024-11-16")
+		(date "2025-07-28")
 		(rev "1.0")
 		(company "Picherie")
 	)
@@ -59,6 +59,15 @@
 				)
 			)
 			(property "Description" "Light emitting diode, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pin" "1=K 2=A"
 				(at 0 0 0)
 				(effects
 					(font
@@ -402,7 +411,7 @@
 			(symbol "BC547_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0.635 0)
+						(xy -2.54 0) (xy 0.635 0)
 					)
 					(stroke
 						(width 0)
@@ -414,34 +423,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
+						(xy 0.635 1.905) (xy 0.635 -1.905)
 					)
 					(stroke
 						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 0.635) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
 						(type default)
 					)
 					(fill
@@ -459,9 +444,35 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "BC547_1_1"
 				(polyline
 					(pts
-						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778) (xy 1.27 -1.778)
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
 					)
 					(stroke
 						(width 0)
@@ -471,11 +482,9 @@
 						(type outline)
 					)
 				)
-			)
-			(symbol "BC547_1_1"
 				(pin input line
 					(at -5.08 0 0)
-					(length 5.08)
+					(length 2.54)
 					(name "B"
 						(effects
 							(font
@@ -756,6 +765,17 @@
 			)
 			(embedded_fonts no)
 		)
+	)
+	(text "These LEDs are used for debug/control purpose.\nThey are switched on briefly every time an organ function MIDI message is sent to setBfree.\nFor example, every time one moves the expression pedal, the EXP_LED signal is set."
+		(exclude_from_sim no)
+		(at 56.642 129.032 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "fea97972-4f31-4242-ac82-6e10d0f32b60")
 	)
 	(wire
 		(pts
@@ -1342,7 +1362,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/on-semiconductor/bc547cbu/transistor-bipol-npn-45v-to-92/dp/2453791?st=bc547"
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
 			(at 50.8 50.8 0)
 			(effects
 				(font
@@ -1352,7 +1372,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
 			(at 50.8 50.8 0)
 			(effects
 				(font
@@ -1491,7 +1511,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 53.34 58.42 0)
 			(effects
 				(font
@@ -1617,7 +1637,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/panasonic/erj8enf2801v/res-couche-epaisse-2-8k-1-0-25w/dp/2307588"
+		(property "Datasheet" "~"
 			(at 102.87 93.98 0)
 			(effects
 				(font
@@ -1626,7 +1646,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small US symbol"
 			(at 102.87 93.98 0)
 			(effects
 				(font
@@ -1737,8 +1757,8 @@
 				)
 			)
 		)
-		(property "Value" "Vib/Chr"
-			(at 57.15 76.454 0)
+		(property "Value" "Vibrato / Chorus"
+			(at 52.832 76.454 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1764,6 +1784,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode, small symbol"
+			(at 57.15 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pin" "1=K 2=A"
 			(at 57.15 85.09 0)
 			(effects
 				(font
@@ -1832,7 +1861,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 53.34 101.6 0)
 			(effects
 				(font
@@ -1888,7 +1917,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/panasonic/erj8enf2801v/res-couche-epaisse-2-8k-1-0-25w/dp/2307588"
+		(property "Datasheet" "~"
 			(at 161.29 50.8 0)
 			(effects
 				(font
@@ -1897,7 +1926,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small US symbol"
 			(at 161.29 50.8 0)
 			(effects
 				(font
@@ -2027,7 +2056,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/on-semiconductor/bc547cbu/transistor-bipol-npn-45v-to-92/dp/2453791?st=bc547"
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
 			(at 170.18 50.8 0)
 			(effects
 				(font
@@ -2037,7 +2066,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
 			(at 170.18 50.8 0)
 			(effects
 				(font
@@ -2179,7 +2208,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 114.3 58.42 0)
 			(effects
 				(font
@@ -2235,7 +2264,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/panasonic/erj8enf2801v/res-couche-epaisse-2-8k-1-0-25w/dp/2307588"
+		(property "Datasheet" "~"
 			(at 41.91 93.98 0)
 			(effects
 				(font
@@ -2244,7 +2273,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small US symbol"
 			(at 41.91 93.98 0)
 			(effects
 				(font
@@ -2307,7 +2336,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/on-semiconductor/bc547cbu/transistor-bipol-npn-45v-to-92/dp/2453791?st=bc547"
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
 			(at 111.76 93.98 0)
 			(effects
 				(font
@@ -2317,7 +2346,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
 			(at 111.76 93.98 0)
 			(effects
 				(font
@@ -2450,7 +2479,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/on-semiconductor/bc547cbu/transistor-bipol-npn-45v-to-92/dp/2453791?st=bc547"
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
 			(at 111.76 50.8 0)
 			(effects
 				(font
@@ -2460,7 +2489,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
 			(at 111.76 50.8 0)
 			(effects
 				(font
@@ -2606,6 +2635,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" "1=K 2=A"
+			(at 57.15 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3e4a5ca2-340f-4b55-81c6-90b277e1fe4c")
 		)
@@ -2660,7 +2698,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/on-semiconductor/bc547cbu/transistor-bipol-npn-45v-to-92/dp/2453791?st=bc547"
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
 			(at 50.8 93.98 0)
 			(effects
 				(font
@@ -2670,7 +2708,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
 			(at 50.8 93.98 0)
 			(effects
 				(font
@@ -2879,7 +2917,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 172.72 58.42 0)
 			(effects
 				(font
@@ -3012,7 +3050,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 114.3 101.6 0)
 			(effects
 				(font
@@ -3085,6 +3123,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" "1=K 2=A"
+			(at 176.53 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8e7e3fbf-7896-4d70-b1f4-9538819e4ecd")
 		)
@@ -3135,7 +3182,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/panasonic/erj8enf2801v/res-couche-epaisse-2-8k-1-0-25w/dp/2307588"
+		(property "Datasheet" "~"
 			(at 228.6 50.8 0)
 			(effects
 				(font
@@ -3144,7 +3191,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small US symbol"
 			(at 228.6 50.8 0)
 			(effects
 				(font
@@ -3273,7 +3320,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/panasonic/erj8enf2801v/res-couche-epaisse-2-8k-1-0-25w/dp/2307588"
+		(property "Datasheet" "~"
 			(at 102.87 50.8 0)
 			(effects
 				(font
@@ -3282,7 +3329,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small US symbol"
 			(at 102.87 50.8 0)
 			(effects
 				(font
@@ -3358,6 +3405,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" "1=K 2=A"
+			(at 118.11 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "38a3c7d3-ff5a-4dab-93a1-6857716073f0")
 		)
@@ -3412,7 +3468,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/on-semiconductor/bc547cbu/transistor-bipol-npn-45v-to-92/dp/2453791?st=bc547"
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
 			(at 237.49 50.8 0)
 			(effects
 				(font
@@ -3422,7 +3478,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
 			(at 237.49 50.8 0)
 			(effects
 				(font
@@ -3501,6 +3557,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" "1=K 2=A"
+			(at 118.11 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b688b327-0262-488f-b0dc-1620f0cf4da5")
 		)
@@ -3551,7 +3616,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/panasonic/erj8enf2801v/res-couche-epaisse-2-8k-1-0-25w/dp/2307588"
+		(property "Datasheet" "~"
 			(at 41.91 50.8 0)
 			(effects
 				(font
@@ -3560,7 +3625,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small US symbol"
 			(at 41.91 50.8 0)
 			(effects
 				(font
@@ -3636,6 +3701,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pin" "1=K 2=A"
+			(at 243.84 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3eab8430-5471-4ab5-9b2a-7ff98f2bc17a")
 		)
@@ -3696,7 +3770,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 240.03 58.42 0)
 			(effects
 				(font
